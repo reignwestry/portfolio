@@ -1,81 +1,56 @@
-import GalleryProjectBox from "./../GalleryProjectBox";
-// import AppProjectType from "./../../assets/imgs/project-type-icons/android.png";
+import ShowcaseBackgroundImg from "./../../assets/imgs/backgrounds/showcaseBackgroundImg.png";
+import GalleryProject from "./../../components/GalleryProject";
+//note Gallery PROJECTS DATA ARRAY
+// import Projects from './../../data/projectDataArray';
+import ShowcaseProject from "./../../data/showcaseArray";
 
 
-import pImg from "./../assets/imgs/Project-Thumbs/pexels-ovan-57690.jpg";
-// import ProjectDetails from "../ProjectDetails";
-// import pIconType from "";
-import ViteIcon from "./../assets/imgs/icons-language/vite.png";
-import ReactIcon from "./../assets/imgs/icons-language/reactjs.png";
-import ExpressIcon from "./../assets/imgs/icons-language/reactjs.png";
-import SassIcon from "./../assets/imgs/icons-language/sass.png";
+//todo SETUP PROJECT LINKS AND THUMBS
 
-//todo CREATE a PROJECTS array to map each project to a GalleryProjectBox
-//todo MAP PROJECTS ARRAY
 
-let projects = [
-  {},
-  []
-]
-
+//todo finish mobile responsive
+//todo convert projectRow to a map function
 function GallerySection() {
 
 
-    //? PROJECT COMPONENT PROPS
-
-
-  //? INBOUND(PASSED) PROPS FROM ARRAY
-  const project = [
-    {
-      gHLink: `http://github.com`,
-      Desc: `This is a desc. This is a desc. This is a
-              desc. This is a desc. this is a desc. This is a desc.This is a
-              desc. This is a desc. This is a desc. this is a desc. This is a
-              desc.This is a desc.`,
-      bgImg: pImg,
-      title: `Project Name`,
-      type: `website`,
-      typeIcon: projectTypeCheck(project.type),
-      PLtypeOne: ViteIcon,
-      PLtypeTwo: ReactIcon,
-      PLtypeThree: ExpressIcon,
-      PLtypeFourth: SassIcon,
-      PLtypeFifth: ReactIcon,
-    },
-  ];
-
   return (
-    <section className="gallerySection">
-      <div className="row">
-        <GalleryProjectBox project={project} />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
+    <div
+      className="gallerySection"
+      style={{
+        backgroundImage: `url(${ShowcaseBackgroundImg})`,
+      }}
+    >
+      {/* <div className="sectionHeader"></div> */}
+      {/* <span>Here is a showcase of my best and latest projects</span> */}
+      <div className="galleryBlock">
+        
+        const projects = {ShowcaseProject.map((Project) => {
+          console.log(Project.image);
+          return (<GalleryProject key={Project.id} pImage={Project.image} pLink={Project.link} pName={Project.name} pType={Project.type} pTech={Project.tech} github={Project.github} />);
+        })}
+        <ShowcaseArray />
       </div>
-
-      {/* //# MAP ARRAY */}
-
-      <div className="row">
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-      </div>
-
-      <div className="row">
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-      </div>
-      <div className="row">
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-        <GalleryProjectBox />
-      </div>
-    </section>
+    </div>
   );
 }
+
+function ShowcaseArray() {
+  const showcaseArray = this.props.showcaseArray.map((Project) => (
+    <GalleryProject 
+      key={Project.id}
+      pImage={Project.image}
+      pLink={Project.link}
+      pName={Project.name}
+      pType={Project.type}
+      pTech={Project.tech}
+      github={Project.github}
+      />
+    ));
+  return (
+    <>
+      {showcaseArray}
+    </>
+  );
+} 
 
 export default GallerySection;

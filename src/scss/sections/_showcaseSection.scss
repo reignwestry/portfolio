@@ -1,0 +1,71 @@
+@use "./../components/variables";
+@use "./../components/mixins";
+@use "./../components/projectContainer";
+
+.showcaseSection {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  @include mixins.parallaxBackground;
+
+  .sectionHeader {
+    height: 10vh;
+    width: 30vw;
+    margin: 0;
+    margin-left: 7vw;
+    margin-bottom: 15vh;
+    padding-top: 3vh;
+
+    h1 {
+      color: variables.$Primary-color;
+      height: 7vh;
+      margin-top: 0;
+      // border: 1px dashed;
+      text-align: center;
+      @include mixins.FontStyleOne;
+    }
+  }
+
+  span {
+    color: variables.$Third-color;
+    font-size: 1.5rem;
+    margin-left: 5vw;
+  }
+  .showcaseGallery {
+    height: 60vh;
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: variables.$mobileView) {
+  .showcaseSection {
+    height: 475vh;
+
+    .showcaseGallery {
+      width: 80%;
+      margin: 0 auto;
+      height: 400vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+        .projectBoxShadow,
+        .projectBox {
+          width: 98%;
+          height: 40vh;
+          margin: 0 auto;
+          background: cover;
+        }
+      
+    }
+  }
+}
+
+
+
+@media screen and (max-width: variables.$tabletView) {
+
+}

@@ -1,14 +1,11 @@
-// import React from 'react';
-import Nav from './Nav';
+import MainNav from './MainNav';
+function Header() {
+    return (
+        <div className='headerSection'>
+            <h1 className="headerTitle">Reign Westry</h1>
 
-function Header({ title }) {
-    return <div>
-        <header>
-            <span>{title}</span>
-            <Nav />
-            
-      </header>
-  </div>;
+            <MainNav />
+        </div>
+    );
 }
-
 export default Header;

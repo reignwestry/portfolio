@@ -1,3 +1,7 @@
+# Project
+src/pages/projects/*
+public/projects/*
+db/*
 node_modules/
 projects/
 js/emailData.js

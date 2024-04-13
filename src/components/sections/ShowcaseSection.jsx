@@ -1,57 +1,35 @@
-import ProjectDetails from './../ProjectDetails';
+import ShowcaseBackgroundImg from "./../../assets/imgs/backgrounds/showcaseBackgroundImg.png";
+
+import ShowcaseProject from "./../ShowcaseProject";
 
 
-import ThumbOne from "./../../assets/imgs/Project-Thumbs/thumbOne.jpg";
-import ThumbTwo from "./../../assets/imgs/Project-Thumbs/thumbTwo.jpg";
-import ThumbThree from "./../../assets/imgs/Project-Thumbs/thumbThree.jpg";
-import ThumbFour from "./../../assets/imgs/Project-Thumbs/thumbFour.jpg";
-
-
-
+//todo finish mobile responsive
+//todo convert projectRow to a map function
 function ShowcaseSection() {
   return (
-    <section className="showcaseSection">
-      <div className="row">
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbOne})` }}
-        >
-          <ProjectDetails />
-        </div>
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbTwo})` }}
-        >
-          <ProjectDetails />
-        </div>
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbThree})` }}
-        >
-          <ProjectDetails />
-        </div>
+    <div
+      className="showcaseSection"
+      style={{
+        backgroundImage: `url(${ShowcaseBackgroundImg})`,
+      }}
+    >
+      <div className="sectionHeader">
+        <h1>Showcase</h1>
       </div>
-      <div className="row">
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbFour})` }}
-        >
-          <ProjectDetails />
-        </div>
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbOne})` }}
-        >
-          <ProjectDetails />
-        </div>
-        <div
-          className="projectThumb"
-          style={{ backgroundImage: `url(${ThumbThree})` }}
-        >
-          <ProjectDetails />
-        </div>
+      <span>Here is a showcase of my best and latest projects</span>
+      <div className="showcaseGallery">
+
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+          <ShowcaseProject />
+
       </div>
-    </section>
+    </div>
   );
 }
 

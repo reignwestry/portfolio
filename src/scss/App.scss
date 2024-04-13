@@ -1,7 +1,12 @@
-@use './components/setup';
-@use './components/sections/heroSection';
-@use './components/sections/header';
-@use './components/sections/passionAndFocus';
-@use './components/sections/showcaseSection';
-@use './components/sections/skillsSection';
-@use './components/sections/footer';
+
+// @use './pages/home';
+@use './components/basic';
+@use './components/header';
+@use './components/nav';
+@use './sections/heroSection';
+@use './sections/about';
+@use './sections/showcaseSection';
+@use './sections/contactSection';
+@use './sections/form';
+@use './sections/footer';
+@use './sections/gallerySection';

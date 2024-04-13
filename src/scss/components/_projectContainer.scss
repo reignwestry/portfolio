@@ -1,0 +1,98 @@
+@use "./../components/variables";
+@use './../components/mixins';
+
+.projectBoxShadow {
+  width: 25vw;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+
+  .projectBox {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+
+    &:hover {
+        @include mixins.buttonOutlineAnimation;
+
+      .projectData {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        opacity: 1;
+        color: variables.$Primary-color;
+      }
+    }
+  }
+}
+
+.projectData {
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .projectBasicData {
+    height: 25%;
+
+    h2 {
+      color: variables.$Fourth-color;
+      font-weight: 700;
+      height: 50%;
+      margin: 0;
+    }
+    h3 {
+      color: variables.$Fifth-color;
+      margin: 0, auto;
+      width: 100%;
+      height: 5%;
+      text-align: center;
+    }
+  }
+  .projectTechData {
+    margin: 0;
+    height: 50%;
+    margin-bottom: 0;
+
+    h4 {
+      color: variables.$Fourth-color;
+      font-weight: 700;
+    }
+
+    .gLink {
+        border: 1px dashed white;
+        width: 100%;
+      text-align: center;
+      &:hover {
+        color: variables.$Fifth-color;
+      }
+    }
+  }
+  .techTypes {
+    font-size: 1.2rem;
+    color: variables.$Third-color;
+  }
+}
+
+
+
+@media screen and (max-width: variables.$mobileView) {
+
+  .projectBox{
+    width: 100%;
+  }
+
+  
+}
+
+@media screen and (max-width: variables.$tabletView) {
+
+
+
+}
