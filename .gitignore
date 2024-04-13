@@ -5,4 +5,5 @@ email/
 paymentGateway/
 .pHooks/
 sub_domains/
-
+db/
+dist/
