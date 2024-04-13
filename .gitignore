@@ -1,6 +1,5 @@
 node_modules/
 projects/
-js/emailData.js
 paymentGateway/
 .pHooks/
 sub_domains/
@@ -8,3 +7,4 @@ db/
 dist/
 email/variables.php
 *variables
+js/variables.js
