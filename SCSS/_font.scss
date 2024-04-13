@@ -1,0 +1,19 @@
+
+
+@mixin primary-font{
+    
+    font-family: primary-font;
+} 
+@font-face {
+    font-family: primary-font;
+    src:url('./../font/Bodoni-MT.TTF'); 
+    }
+
+
+@mixin secondary-font{
+
+}
+
+// width 105.48
+// height 149.97 cen
+// resolution 72

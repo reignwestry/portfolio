@@ -1,11 +1,3 @@
 node_modules
 projects/
-js/emailData.js
-email/
-projects
-paymentGateway
-projects/
-paymentGateway
-email/
-.pHooks/
-sub_domains/
+sub_domains

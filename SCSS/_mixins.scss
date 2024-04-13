@@ -1,0 +1,13 @@
+@use 'variables';
+@use 'font';
+
+@mixin activeElements {
+  &:focus {
+    background: variables.$primary-color;
+    color: green;
+  }
+
+  &:hover {
+    background: variables.$fifth-color;
+  }
+}

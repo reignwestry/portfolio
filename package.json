@@ -1,0 +1,35 @@
+{
+  "name": "latest-portfoliohightech-html-version",
+  "version": "0.0.1",
+  "description": "latest portfolio design with the latest learned tech",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --server --watch --files '*' ",
+    "scss": "sass scss/styles.scss css/styles.css -w",
+    "deploy": "git push deploy production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/reignwestry/portfolio-high-tech-html-version.git"
+  },
+  "keywords": [
+    "portfolio",
+    "reign",
+    "westry",
+    "developer",
+    "website",
+    "software",
+    "engineer",
+    "freelance"
+  ],
+  "author": "Reign Westry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reignwestry/portfolio-high-tech-html-version/issues"
+  },
+  "homepage": "https://github.com/reignwestry/portfolio-high-tech-html-version#readme",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}
