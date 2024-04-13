@@ -863,7 +863,57 @@ footer {
   margin: 2vh 0;
 }
 .showcaseSection .section h2 {
-  margin: 0 2vw;
+  margin: 2vh 2vw;
+}
+.showcaseSection .section p {
+  width: 50vw;
+  margin: 0 3vw;
+  border: 1px dashed yellow;
+}
+
+.skillsSection {
+  height: auto;
+}
+.skillsSection .skillTable {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  box-align: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.skillsSection .skillTable th, .skillsSection .skillTable .subCategory {
+  border: 2px solid rgb(0, 241, 74);
+  color: rgba(247, 179, 4, 0.7);
+  height: 10vh;
+  width: 100%;
+  background: #4a3103;
+  font-size: 2rem;
+  margin-bottom: 2vh;
+}
+.skillsSection .skillTable tr {
+  border: 1px solid rgb(0, 241, 74);
+  height: 12%;
+  width: 100%;
+  margin: 0.5% 0;
+  display: flex;
+  flex-direction: row;
+}
+.skillsSection .skillTable tr td {
+  background-color: rgba(247, 179, 4, 0.7);
+  border: 1px solid rgb(0, 241, 74);
+  color: #4a3103;
+  font-size: 1.4rem;
+  padding: auto;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+}
+.skillsSection .skillTable tr td span {
+  font-size: 0.8rem;
+  color: rgb(0, 241, 74);
 }
 
 /*# sourceMappingURL=styles.css.map */
