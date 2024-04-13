@@ -1,0 +1,78 @@
+@use '../font';
+@use '../variables';
+@use '../mixins';
+
+// .resumeSection{
+//     background-image: url('./../imgs/backgrounds/resumeBackground.png');
+//     background-position: center;
+//     background-repeat: none;
+//     background-size: cover;
+//     color: variables.$secondary-color;
+//     display: flex;
+//     flex-direction: column;
+
+
+//     .resumeContainer{
+//         // border: 1px dashed orange;
+//         width: 100%;
+//         height: 50%;
+//         margin: 0;
+
+//         .resumeIntro{
+//             background-color: variables.$fifth-color;
+//             // border: 1px dashed white;
+//             font-size: 2.5rem;
+//             margin: 9% 5vw;
+//             width: 52vw;
+
+//             p{
+//                 margin: 3%;
+//             }
+//         }
+//     }
+
+//     .educationBox{
+//         // border: 1px dashed red;
+//         height: 50%;
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+
+//         div{
+//             // border: 1px dashed yellow;
+//             height: 100%;
+//             width: 50%;
+
+//             h3{
+//                 color: variables.$primary-color;
+//                 font-size: 2rem;
+//                 margin: 3%;
+//             }
+
+//             ol{
+//                 // border: 1px dashed white;
+//                 font-size: 1.5rem;
+//                 list-style: none;
+//                 line-height: 200%;
+//                 margin: 0 5%;
+//                 width: 80%;
+
+//                 .schoolName, span{
+//                     color: variables.$tertiary-color;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.showcaseSection{
+    .section{
+        background: variables.$secondary-color;
+        height: 20vh;
+        margin: 2vh 0;
+
+        h2{
+            margin: 0 2vw;
+        }
+    }
+}

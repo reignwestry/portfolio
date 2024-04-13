@@ -1,0 +1,85 @@
+@use "../font";
+@use "../variables";
+@use "../mixins";
+
+.aboutSection {
+  background-image: url("./../imgs/backgrounds/aboutBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  h1 {
+    height: 10vh;
+    margin-top: 10%;
+    padding: 100%;
+    margin: 0;
+    @include mixins.fontStyleOne;
+  }
+}
+
+.aboutContainer {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  width: 89%;
+  font-size: .70rem;
+  color: green;
+  display: flex;
+  flex-direction: row;
+
+  .aboutIntro {
+    height: 5vh;
+    width: 50vw;
+    text-align: left;
+    font-size: 2rem;
+    color: variables.$secondary-color;
+  }
+
+  table{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    box-align: center;
+    text-align: center;
+
+    th{ 
+      border: 2px solid variables.$primary-color;
+      color: variables.$fourth-color;
+      height: 5vh;
+      width: 50%;
+      background: variables.$secondary-color;
+      // padding: 5% auto;
+      font-size: 2rem;
+      margin-bottom: 2vh;
+    }
+
+    tr{
+      border: 1px solid variables.$primary-color;
+      height: 12%;
+      width: 100%;
+      margin: .5% 0;
+      display: flex;
+      flex-direction: row;
+
+
+
+      td{
+        background-color:  variables.$fourth-color ;
+        border: 1px solid variables.$primary-color;
+        color: variables.$secondary-color;
+        font-size: 1.4rem;
+        padding: auto;
+        text-align: center;
+        height: 100%;
+        width: 50%;
+        margin: 0;
+
+        span{
+          font-size: .8rem;
+          color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}

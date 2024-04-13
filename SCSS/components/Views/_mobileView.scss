@@ -1,0 +1,207 @@
+@use '../font';
+@use '../variables';
+@use '../mixins';
+
+@media (min-width: 0) and (max-width: variables.$mobile-breakpoint){
+
+//# Hero Section
+    header>h1{
+        width: 40vw;
+        border: 1px dashed yellow;
+    }
+    nav{
+        display: none;
+    }
+
+    .heroSection{
+        height: 100vh;
+        width: 99.9%;
+        
+        .heroMessage{
+            // border: 1px dashed red;
+            flex-direction: column;
+            height: 40vh;
+            margin-top: 50vh;
+            width: 99.5%;
+
+            .heroMessageContainer{
+                // border: 1px dashed yellow;
+                height: 23vh;
+                width: 95%;
+                margin: 3%;
+                
+                p{
+                    font-size: 3rem;
+                }
+
+            }
+            button{
+                margin-top: 2%;
+                width: 50%;
+            }
+        }
+
+
+    }
+
+    //# Showcase Section
+    .showcaseSection{
+        height: auto;
+        width:100%;
+
+        .headerContainer{
+            margin-bottom: 5vh;
+        }
+
+        .showcaseContainer{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            .row{
+                flex-direction: column;
+
+            }
+
+        }
+    }
+
+    .projectThumbLink{
+        width: 99.7%;
+
+        .projectDetails{
+            .projectHeader{
+                font-size: 200%;
+
+                span{
+
+                    color: variables.$primary-color;
+                }
+            }
+        }
+
+    }
+
+    //# About Section
+    .aboutSection{
+        height: 100vh;
+
+        .aboutContainer{
+    
+            // border: 1px dashed white;
+            height: auto;
+            margin-top: 6vh;
+    
+            .aboutIntro{
+                width: 80vw;
+        
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .skillContainer{
+                // border: 1px dashed red;
+                margin-top: 15%;
+                height: auto;
+    
+                .skillbox{
+    
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                    ul>li{
+                        height: 7.4vh;
+                    }
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    //# Resume Section
+    .resumeSection{
+        height: auto;
+
+        .resumeContainer{
+
+            .resumeIntro{
+                // border: 1px dashed red;
+                height: 40vh;
+                width: 90vw;
+                margin: 2% 2vw;
+    
+                p{
+                    font-size: 1.9rem;
+                }
+            }
+        }
+
+        .educationBox{
+            display: flex;
+            flex-direction: column;
+
+            div{
+                // border: 1px dashed yellow;
+                width: 80vw;
+
+                margin: 2% auto;
+            }
+        }
+    }
+
+    .contactSection{
+        height: 100vh;
+        width: 100vw;
+
+        .contactContainer{
+            display: flex;
+            flex-direction: column;
+
+            .contactForm{
+                margin: 0 auto;
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
+
+
+
+                fieldset{
+                    width: 49%;
+                    margin: 2%;
+
+                    input{
+                        width: 100%;
+                    }
+                }
+
+                .messageTypeContainer{
+                    width: 80vw;
+
+                    select{
+                        width: 60vw;
+                    }
+                }
+
+                textarea{
+                    width: 86vw;
+                    margin: 1% .1%;
+                }
+                .submitBtn{
+                    width: 40%;
+                    margin-left:55vw;
+                }
+
+
+            }
+    
+            .socialMediaContainer{
+                margin: 5% auto;
+                width: 50vw;
+
+            }
+        }
+
+    }
+
+}

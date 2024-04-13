@@ -1,0 +1,67 @@
+@use "./../font";
+@use "../variables";
+@use "../mixins";
+
+
+.contactSection {
+  background-image: url("./../imgs/backgrounds/contactBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .titleBox{
+    margin-top: 12vh;
+
+    .contactHeader{
+    height: 10vh;
+    margin-top: 10%;
+    padding: 100%;
+    margin: 0;
+    @include mixins.fontStyleOne;
+    }
+  }
+  .contactInfoBox{
+
+    p{
+      font-size: 1.5rem;
+      margin-left: 10%;
+  
+    }
+  }
+  .contactFormBox{
+    // background: blue;
+    width: 31%;
+    margin: 0 auto;
+  }
+
+  .socialMediaContainer{
+    
+    border: 1px dashed yellow;
+    height: 20vh;
+    margin-top:20%;
+    width: 20%;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .socialMedia {
+      fill: #fff;
+      width: 90%;
+      color: blue;
+      background: green;
+      margin: 0;
+      padding: 0;
+
+      
+    }
+
+    .socialMedia path{
+        fill: white;
+      }
+
+
+  }
+}
+

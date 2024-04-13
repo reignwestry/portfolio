@@ -1,0 +1,82 @@
+@use "../font";
+@use "./../../components/mixins";
+@use "./../../components/variables";
+.showcaseSection {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 99vw;
+  background-image: url('./../../../imgs/backgrounds/showcaseBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mixins.parallaxBackground;
+
+  .sectionHeader {
+    height: 10vh;
+    width: 30vw;
+    margin: 0;
+    margin-left: 7vw;
+    margin-bottom: 15vh;
+    padding-top: 3vh;
+
+    h1 {
+      color: variables.$primary-color;
+      height: 7vh;
+      margin-top: 0;
+      text-align: center;
+      @include mixins.fontStyleOne;
+    }
+  }
+
+  span {
+    color: variables.$tertiary-color;
+    font-size: 1.5rem;
+    margin-left: 5vw;
+  }
+  .showcase{
+    background: rgb(165, 108, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+
+}
+
+
+
+// @media screen and (max-width: variables.$mobile-breakpoint) {
+//   .showcaseSection {
+//     height: 475vh;
+
+//     .showcaseGallery {
+//       width: 80%;
+//       margin: 0 auto;
+//       height: 400vh;
+//       display: flex;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+
+//         .projectBoxShadow,
+//         .projectBox {
+//           width: 98%;
+//           height: 40vh;
+//           margin: 0 auto;
+//           background: cover;
+//         }
+      
+//     }
+//   }
+// }
+
+
+
+// @media screen and (max-width: variables.$tablet-breakpoint) {
+
+// }
