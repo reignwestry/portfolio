@@ -1,0 +1,64 @@
+@use 'font';
+@use 'variables';
+@use 'mixins';
+
+.aboutSection{
+    background-image: url('./../imgs/backgrounds/aboutBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99.9%;
+    
+}
+
+.aboutContainer{
+    color: lightgreen;
+    height: 65vh;
+    width: 90%;
+    margin-top: 25vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+
+    .aboutIntro{
+        font-size: 2.3rem;
+        height:25vh;
+        width: 80%;
+
+        p{
+            margin-left: 5vw;
+            text-align: center;
+            color: white;
+            line-height: 170%;
+        }
+    }
+
+    .skillContainer{
+        display: flex;
+        flex-direction: row;
+        height: 40vh;
+        justify-content: center;
+
+        div{
+            width: 25%;
+
+            h3{
+                margin: 0 auto;
+                text-align: center;
+                font-size: 2rem;
+            }
+            ul{
+                margin: 0 auto;
+                width: 60%;
+                margin-top:2%;
+                list-style: none;
+
+                li{
+                    font-size: 1.3rem;
+                    height: 10%;
+                    text-align: center;
+                    color: variables.$primary-color;
+                }
+            }
+        }
+    }
+}

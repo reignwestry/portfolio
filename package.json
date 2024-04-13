@@ -6,10 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --watch --files '*' ",
-    "sass": "sass scss/styles.scss css/styles.css -w",
-    "deploy": "git push deploy production",
-    "nodemon": "nodemon index.html",
-    "serve": "concurrently \"browser-sync\" \"sass\""
+    "scss": "sass scss/styles.scss css/styles.css -w",
+    "deploy": "git push deploy production"
   },
   "repository": {
     "type": "git",
@@ -23,11 +21,7 @@
     "website",
     "software",
     "engineer",
-    "freelance",
-    "web design",
-    "web development", 
-    "App Development", 
-    "Android"
+    "freelance"
   ],
   "author": "Reign Westry",
   "license": "ISC",
@@ -36,12 +30,6 @@
   },
   "homepage": "https://github.com/reignwestry/portfolio-high-tech-html-version#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "nodemon": "^3.1.0",
     "scss": "^0.2.4"
-  },
-  "dependencies": {
-    "browser-sync": "^3.0.2",
-    "sass": "^1.72.0"
   }
 }
