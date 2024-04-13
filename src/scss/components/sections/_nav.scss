@@ -1,0 +1,36 @@
+@import './../variables';
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 50%;
+    margin-left: 48vw;
+    margin-top:1.8%;
+    
+    ul{
+        display: flex;
+        margin: 0;
+        padding:0;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        
+        li{
+            list-style: none;
+            text-decoration: none;
+
+            a{
+                color: $primary-color; 
+                text-decoration:none;
+                width: 100%;
+                height: 100%;
+
+                &:active{
+                    color: $primary-color;
+                }
+            }
+        }
+
+    }
+}

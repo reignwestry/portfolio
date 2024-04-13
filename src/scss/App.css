@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body section {
+  border: 1px dashed white;
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "Bodoni-Roman", serif;
+  src: url("./../../components/fonts/BodoniFLF-Roman.ttf") format("ttf");
+}
+.heroSection {
+  color: white;
+  background-position: center;
+}
+.heroSection video {
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+.heroSection .heroContent {
+  background-color: rgba(74, 48, 33, 0.6);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.heroSection .heroContent .heroTitle {
+  color: rgb(212, 175, 55);
+  font-family: Bodoni-Roman, serif;
+  text-shadow: -4px 1px rgba(74, 48, 33, 0.6);
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 45vh;
+  height: 100%;
+}
+.heroSection .heroContent .heroTitle .titleBox {
+  margin-bottom: 5vh;
+}
+.heroSection .heroContent .heroTitle h1 {
+  margin-top: 0;
+  margin-bottom: -1vh;
+}
+.heroSection .heroContent .heroTitle span {
+  font-size: 2.8rem;
+  margin-top: 0;
+  color: rgb(8, 147, 255);
+}
+.heroSection .heroContent .heroTitle button {
+  text-decoration: none;
+  background: transparent;
+  width: 20vw;
+  height: 8vh;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2%;
+  color: white;
+  border: 4px solid white;
+}
+.heroSection .heroContent .heroTitle button:active {
+  border: 2px solid darken;
+  font-size: 3.8rem;
+}
+.heroSection .heroContent .heroTitle .BTN-HireMe {
+  border: 4px solid green;
+  color: green;
+}
+.heroSection .heroContent .heroTitle .BTN-HireMe:hover {
+  border: 4px solid rgb(8, 147, 255);
+  color: rgb(8, 147, 255);
+}
+.heroSection .heroContent .heroTitle .BTN-SeeMore {
+  border: 4px solid rgb(8, 147, 255);
+  color: rgb(8, 147, 255);
+}
+.heroSection .heroContent .heroTitle .BTN-SeeMore:hover {
+  border: 4px solid rgb(3, 178, 57);
+  color: rgb(3, 178, 57);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  height: 50%;
+  margin-left: 48vw;
+  margin-top: 1.8%;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+}
+nav ul li a {
+  color: rgb(212, 175, 55);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+nav ul li a:active {
+  color: rgb(212, 175, 55);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 8vh;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+header span {
+  font-size: 4rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0;
+  color: rgba(74, 48, 33, 0.6);
+  text-shadow: -3px 0px rgb(212, 175, 55);
+}
+
+.pNfSection h1 {
+  color: white;
+}
+/*# sourceMappingURL=App.css.map */

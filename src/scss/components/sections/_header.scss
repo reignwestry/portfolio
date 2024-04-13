@@ -1,0 +1,21 @@
+@use './nav';
+@import './../variables';
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    span{
+        font-size: 4rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 0;
+        color: $fourth-color;
+        text-shadow: -3px 0px $primary-color;
+    }
+}
