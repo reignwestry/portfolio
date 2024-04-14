@@ -857,9 +857,25 @@ footer {
   margin-bottom: 2vh;
 }
 
+.educationSection {
+  background-color: red;
+}
+.educationSection .degreeBox {
+  background: black;
+  width: 30vw;
+}
+.educationSection .degreeBox h3 {
+  height: 4vh;
+  width: 25vw;
+  margin: 0;
+  margin-left: 2vw;
+  background: pink;
+  text-align: left;
+}
+
 .showcaseSection .section {
   background: #4a3103;
-  height: 20vh;
+  height: auto;
   margin: 2vh 0;
 }
 .showcaseSection .section h2 {
@@ -872,13 +888,13 @@ footer {
 }
 
 .skillsSection {
-  height: auto;
+  height: 33vh;
 }
 .skillsSection .skillTable {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 50vh;
+  height: 20vh;
   box-align: center;
   text-align: center;
   margin: 0 auto;
@@ -894,16 +910,16 @@ footer {
 }
 .skillsSection .skillTable tr {
   border: 1px solid rgb(0, 241, 74);
-  height: 12%;
+  height: 8%;
   width: 100%;
-  margin: 0.5% 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
 }
 .skillsSection .skillTable tr td {
   background-color: rgba(247, 179, 4, 0.7);
   border: 1px solid rgb(0, 241, 74);
-  color: #4a3103;
+  color: rgb(0, 241, 74);
   font-size: 1.4rem;
   padding: auto;
   text-align: center;

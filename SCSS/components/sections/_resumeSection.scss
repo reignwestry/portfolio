@@ -1,11 +1,12 @@
 @use "../font";
 @use "../variables";
 @use "../mixins";
+@use "./educationSection"; 
 
 .showcaseSection {
   .section {
     background: variables.$secondary-color;
-    height: 20vh;
+    height: auto;
     margin: 2vh 0;
 
     h2 {
@@ -20,13 +21,13 @@
   }
 }
 .skillsSection {
-  height: auto;
+  height: 33vh;
 
   .skillTable {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
     box-align: center;
     text-align: center;
     margin: 0 auto;
@@ -43,16 +44,16 @@
 
     tr {
       border: 1px solid variables.$primary-color;
-      height: 12%;
+      height: 8%;
       width: 100%;
-      margin: 0.5% 0;
+      margin:  0;
       display: flex;
       flex-direction: row;
 
       td {
         background-color: variables.$fourth-color;
         border: 1px solid variables.$primary-color;
-        color: variables.$secondary-color;
+        color: variables.$primary-color;
         font-size: 1.4rem;
         padding: auto;
         text-align: center;
