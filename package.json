@@ -36,12 +36,12 @@
   },
   "homepage": "https://github.com/reignwestry/portfolio-high-tech-html-version#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
     "nodemon": "^3.1.0",
     "scss": "^0.2.4"
   },
   "dependencies": {
-    "browser-sync": "^3.0.2",
     "sass": "^1.72.0"
   }
 }

@@ -5,15 +5,14 @@
 //# Contact FORM
 form {
   border: 4px solid variables.$primary-color;
-  box-shadow: 5px 2px lighten(variables.$fourth-color, 19%) ;
-  
+  box-shadow: 5px 2px lighten(variables.$fourth-color, 19%);
+
   width: 30vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  
-  .dataBox {
 
+  .dataBox {
     height: 10%;
   }
 }
@@ -43,14 +42,16 @@ form {
     width: 50%;
 
     label {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: 0 3%;
-      // padding: 0 2%;
+      color: variables.$primary-color;
+      text-shadow: -2px 1px variables.$fourth-color;
     }
 
     input {
       background: transparent;
-      color: variables.$fourth-color;
+      border-bottom: 1px solid variables.$primary-color;
+      color: variables.$fifth-color;
       font-size: 100%;
       height: 5vh;
       margin: 0 2%;
@@ -92,18 +93,18 @@ form {
 
       @include mixins.activeElements;
 
-      &:hover{
+      &:hover {
         background: variables.$secondary-color;
       }
 
-      option{
+      option {
         background: variables.$fourth-color;
         color: variables.$primary-color;
-        
-        &:hover, &:focus{
+
+        &:hover,
+        &:focus {
           background: variables.$fourth-color;
           color: variables.$primary-color;
-          
         }
       }
     }

@@ -81,14 +81,7 @@ body {
 }
 .mainNav ul li:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(0, 241, 74),
-    #4a3103,
-    #fff,
-    rgb(247, 179, 4),
-    rgb(10, 245, 254)
-  );
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -98,7 +91,7 @@ body {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   -webkit-animation: glowing 20s linear infinite;
-  animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
@@ -354,14 +347,7 @@ header h1 {
 }
 .projectContainer .projectBox:hover:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(0, 241, 74),
-    #4a3103,
-    #fff,
-    rgb(247, 179, 4),
-    rgb(10, 245, 254)
-  );
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -371,7 +357,7 @@ header h1 {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   -webkit-animation: glowing 20s linear infinite;
-  animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
@@ -647,7 +633,7 @@ form {
   border: 4px solid rgb(0, 241, 74);
   box-shadow: 5px 2px rgba(252, 209, 95, 0.7);
   width: 30vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -692,7 +678,7 @@ form .dataBox {
 }
 .contactForm fieldset input:focus {
   --borderWidth: 3px;
-  background: #1d1f20;
+  background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
 }
@@ -703,21 +689,11 @@ form .dataBox {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   -webkit-animation: glowing 3s ease alternate infinite;
-  animation: glowing 3s ease alternate infinite;
+          animation: glowing 3s ease alternate infinite;
   background-size: 300% 300%;
 }
 .contactForm .msgTypeContainer {
@@ -762,8 +738,7 @@ form .dataBox {
   background: rgba(247, 179, 4, 0.7);
   color: rgb(0, 241, 74);
 }
-.contactForm .msgTypeContainer select option:hover,
-.contactForm .msgTypeContainer select option:focus {
+.contactForm .msgTypeContainer select option:hover, .contactForm .msgTypeContainer select option:focus {
   background: rgba(247, 179, 4, 0.7);
   color: rgb(0, 241, 74);
 }
@@ -782,25 +757,16 @@ form .dataBox {
   overflow-x: hidden;
   resize: none;
 }
-.contactForm textarea:focus,
-.contactForm textarea:hover {
+.contactForm textarea:focus, .contactForm textarea:hover {
   color: rgba(247, 179, 4, 0.7);
   color: white;
   cursor: pointer;
   position: relative;
   z-index: 0;
 }
-.contactForm textarea:focus:before,
-.contactForm textarea:hover:before {
+.contactForm textarea:focus:before, .contactForm textarea:hover:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(0, 241, 74),
-    #4a3103,
-    #fff,
-    rgb(247, 179, 4),
-    rgb(10, 245, 254)
-  );
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -810,26 +776,22 @@ form .dataBox {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   -webkit-animation: glowing 20s linear infinite;
-  animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
-.contactForm textarea:focus:active,
-.contactForm textarea:hover:active {
+.contactForm textarea:focus:active, .contactForm textarea:hover:active {
   background: transparent;
   color: #000;
 }
-.contactForm textarea:focus:active:after,
-.contactForm textarea:hover:active:after {
+.contactForm textarea:focus:active:after, .contactForm textarea:hover:active:after {
   background: transparent;
 }
-.contactForm textarea:focus:hover:before,
-.contactForm textarea:hover:hover:before {
+.contactForm textarea:focus:hover:before, .contactForm textarea:hover:hover:before {
   opacity: 1;
 }
-.contactForm textarea:focus:after,
-.contactForm textarea:hover:after {
+.contactForm textarea:focus:after, .contactForm textarea:hover:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -858,14 +820,7 @@ form .dataBox {
 }
 .contactForm button:hover:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(0, 241, 74),
-    #4a3103,
-    #fff,
-    rgb(247, 179, 4),
-    rgb(10, 245, 254)
-  );
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -875,7 +830,7 @@ form .dataBox {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   -webkit-animation: glowing 20s linear infinite;
-  animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
@@ -918,53 +873,221 @@ footer {
   margin-bottom: 2vh;
 }
 
-.resumeSection {
-  background-image: url("./../imgs/backgrounds/resumeBackground.png");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  color: #4a3103;
+.educationSection {
+  background-color: red;
+}
+.educationSection .degreeBox {
+  background: black;
+  width: 30vw;
+}
+.educationSection .degreeBox h3 {
+  height: 4vh;
+  width: 25vw;
+  margin: 0;
+  margin-left: 2vw;
+  background: pink;
+  text-align: left;
+}
+
+.showcaseSection .section {
+  background: #4a3103;
+  height: auto;
+  margin: 2vh 0;
+}
+.showcaseSection .section h2 {
+  margin: 2vh 2vw;
+}
+.showcaseSection .section p {
+  width: 50vw;
+  margin: 0 3vw;
+  border: 1px dashed yellow;
+}
+
+.skillsSection {
+  height: 33vh;
+}
+.skillsSection .skillTable {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: 20vh;
+  box-align: center;
+  text-align: center;
+  margin: 0 auto;
 }
-.resumeSection .resumeContainer {
+.skillsSection .skillTable th, .skillsSection .skillTable .subCategory {
+  border: 2px solid rgb(0, 241, 74);
+  color: rgba(247, 179, 4, 0.7);
+  height: 10vh;
   width: 100%;
-  height: 50%;
+  background: #4a3103;
+  font-size: 2rem;
+  margin-bottom: 2vh;
+}
+.skillsSection .skillTable tr {
+  border: 1px solid rgb(0, 241, 74);
+  height: 8%;
+  width: 100%;
   margin: 0;
-}
-.resumeSection .resumeContainer .resumeIntro {
-  background-color: rgb(10, 245, 254);
-  font-size: 2.5rem;
-  margin: 9% 5vw;
-  width: 52vw;
-}
-.resumeSection .resumeContainer .resumeIntro p {
-  margin: 3%;
-}
-.resumeSection .educationBox {
-  height: 50%;
-  width: 100%;
   display: flex;
   flex-direction: row;
 }
-.resumeSection .educationBox div {
+.skillsSection .skillTable tr td {
+  background-color: rgba(247, 179, 4, 0.7);
+  border: 1px solid rgb(0, 241, 74);
+  color: rgb(0, 241, 74);
+  font-size: 1.4rem;
+  padding: auto;
+  text-align: center;
   height: 100%;
   width: 50%;
+  margin: 0;
 }
-.resumeSection .educationBox div h3 {
+.skillsSection .skillTable tr td span {
+  font-size: 0.8rem;
   color: rgb(0, 241, 74);
-  font-size: 2rem;
-  margin: 3%;
 }
-.resumeSection .educationBox div ol {
-  font-size: 1.5rem;
-  list-style: none;
-  line-height: 200%;
-  margin: 0 5%;
-  width: 80%;
-}
-.resumeSection .educationBox div ol .schoolName,
-.resumeSection .educationBox div ol span {
-  color: #fff;
+
+@media (min-width: 0) and (max-width: 768px) {
+  header > h1 {
+    width: 40vw;
+    border: 1px dashed yellow;
+  }
+  nav {
+    display: none;
+  }
+  .heroSection {
+    height: 100vh;
+    width: 99.9%;
+  }
+  .heroSection .heroMessage {
+    flex-direction: column;
+    height: 40vh;
+    margin-top: 50vh;
+    width: 99.5%;
+  }
+  .heroSection .heroMessage .heroMessageContainer {
+    height: 23vh;
+    width: 95%;
+    margin: 3%;
+  }
+  .heroSection .heroMessage .heroMessageContainer p {
+    font-size: 3rem;
+  }
+  .heroSection .heroMessage button {
+    margin-top: 2%;
+    width: 50%;
+  }
+  .showcaseSection {
+    height: auto;
+    width: 100%;
+  }
+  .showcaseSection .headerContainer {
+    margin-bottom: 5vh;
+  }
+  .showcaseSection .showcaseContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .showcaseSection .showcaseContainer .row {
+    flex-direction: column;
+  }
+  .projectThumbLink {
+    width: 99.7%;
+  }
+  .projectThumbLink .projectDetails .projectHeader {
+    font-size: 200%;
+  }
+  .projectThumbLink .projectDetails .projectHeader span {
+    color: rgb(0, 241, 74);
+  }
+  .aboutSection {
+    height: 100vh;
+  }
+  .aboutSection .aboutContainer {
+    height: auto;
+    margin-top: 6vh;
+  }
+  .aboutSection .aboutContainer .aboutIntro {
+    width: 80vw;
+  }
+  .aboutSection .aboutContainer .aboutIntro p {
+    font-size: 1.5rem;
+  }
+  .aboutSection .aboutContainer .skillContainer {
+    margin-top: 15%;
+    height: auto;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox {
+    width: 30%;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox h3 {
+    font-size: 1.6rem;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox ul > li {
+    height: 7.4vh;
+  }
+  .resumeSection {
+    height: auto;
+  }
+  .resumeSection .resumeContainer .resumeIntro {
+    height: 40vh;
+    width: 90vw;
+    margin: 2% 2vw;
+  }
+  .resumeSection .resumeContainer .resumeIntro p {
+    font-size: 1.9rem;
+  }
+  .resumeSection .educationBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .resumeSection .educationBox div {
+    width: 80vw;
+    margin: 2% auto;
+  }
+  .contactSection {
+    height: 100vh;
+    width: 100vw;
+  }
+  .contactSection .contactContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactSection .contactContainer .contactForm {
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactSection .contactContainer .contactForm fieldset {
+    width: 49%;
+    margin: 2%;
+  }
+  .contactSection .contactContainer .contactForm fieldset input {
+    width: 100%;
+  }
+  .contactSection .contactContainer .contactForm .messageTypeContainer {
+    width: 80vw;
+  }
+  .contactSection .contactContainer .contactForm .messageTypeContainer select {
+    width: 60vw;
+  }
+  .contactSection .contactContainer .contactForm textarea {
+    width: 86vw;
+    margin: 1% 0.1%;
+  }
+  .contactSection .contactContainer .contactForm .submitBtn {
+    width: 40%;
+    margin-left: 55vw;
+  }
+  .contactSection .contactContainer .socialMediaContainer {
+    margin: 5% auto;
+    width: 50vw;
+  }
+  .contactFormBox {
+    background: black;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

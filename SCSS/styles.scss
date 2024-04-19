@@ -16,5 +16,5 @@
 @use 'components/sections/resumeSection';
 // @use 'components/pages/resumePage';
 // @use 'components/pages/contactPage';
-// @use './Views/mobileView';
-// @use './Views/tabletView';
+@use './components/Views/mobileView';
+@use './components/Views/tabletView';

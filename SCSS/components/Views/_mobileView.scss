@@ -2,7 +2,7 @@
 @use '../variables';
 @use '../mixins';
 
-@media (min-width: 0) and (max-width: variables.$mobile-breakpoint){
+@media screen and (max-width: variables.$mobile-breakpoint){
 
 //# Hero Section
     header>h1{
@@ -202,6 +202,39 @@
             }
         }
 
+    }
+
+    //# Contact Form
+    .contactInfoBox{
+        height: 80vh;
+        margin: 0 auto;
+        width: 95vw;
+
+
+        .contactFormBox{
+            height: 80%;
+            width: 100%;
+
+            form{
+                height: 100%;
+                margin: 0 auto;
+                width: 90%;
+
+                input, input:active{
+                    border: none;
+                    
+                }
+
+
+                
+                button{
+                    width: 80%;
+                    font-size: 95%;
+                }
+
+            }
+
+        }
     }
 
 }
