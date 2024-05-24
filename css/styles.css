@@ -391,6 +391,7 @@ header h1 {
 .projectData .projectBasicData h2 {
   color: rgba(247, 179, 4, 0.7);
   font-weight: 700;
+  font-size: 2rem;
   height: 50%;
   margin: 0;
 }
@@ -411,7 +412,6 @@ header h1 {
   font-weight: 700;
 }
 .projectData .projectTechData .gLink {
-  border: 1px dashed white;
   width: 100%;
   text-align: center;
 }
@@ -428,60 +428,42 @@ header h1 {
     width: 100%;
   }
 }
-.pOne {
-  background-image: url("./../../imgs/project-thumbs/AppTheme_thumb.png");
+.project {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.pOne {
+  background-image: url("./../../imgs/project-thumbs/AppTheme_thumb.png");
 }
 
 .pTwo {
   background-image: url("./../../imgs/project-thumbs/ACME_thumbnail.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pThree {
   background-image: url("./../../imgs/project-thumbs/MassageByTia_thumb.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pFour {
   background-image: url("./../../imgs/project-thumbs/DayCare_thumb.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pFive {
   background-image: url("./../../imgs/project-thumbs/Girl_Scouts_Form_thumb.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pSix {
   background-image: url("./../../imgs/project-thumbs/Tip_Calc_thumbnail.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pSeven {
   background-image: url("./../../imgs/project-thumbs/OMNIFOOD_thumb.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pEight {
   background-image: url("./../../imgs/project-thumbs/Fudi_thumb.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .aboutSection {
@@ -935,21 +917,19 @@ footer {
   color: rgb(0, 241, 74);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   header {
     width: 99vw;
-    border: 1px dashed yellow;
   }
   header .headerTitle {
     font-size: 195%;
-    border: 1px dashed red;
     width: 100%;
     margin: 0 1%;
   }
-  header button, header svg {
+  header .hamburger {
     display: inline-block;
   }
-  header li {
+  header ul {
     display: none;
   }
   .heroSection {
@@ -986,7 +966,7 @@ footer {
     flex-direction: column;
     height: 100vh;
     width: 99vw;
-    overflow-x: hidden;
+    overflow: auto;
   }
   .showcaseSection .showcase .projectContainer {
     height: 25vh;
@@ -1051,7 +1031,6 @@ footer {
     flex-direction: column;
   }
   .aboutContainer .aboutIntro {
-    border: 1px dashed white;
     height: 25vh;
   }
   .aboutContainer table {

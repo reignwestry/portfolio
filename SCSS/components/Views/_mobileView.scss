@@ -2,44 +2,43 @@
 @use "../variables";
 @use "../mixins";
 
-@media screen and (max-width: variables.$mobile-breakpoint) {
+@media only screen and (min-width: 0px) and (max-width: variables.$mobile-breakpoint) {
   //# Hero Section
   header {
     width: 99vw;
-    border: 1px dashed yellow;
 
     .headerTitle {
       font-size: 195%;
-      border: 1px dashed red;
       width: 100%;
       margin: 0 1%;
     }
 
-    button, svg{
-        display: inline-block;
-    }
+    // button, svg{
+    //     display: inline-block;
+    // }
     
+    .hamburger{
+      display:inline-block;
+    }
+
     //# NavLinks li
-    li {
+    ul {
       display: none;
     }
-
-
   }
+  
 
   .heroSection {
     height: 100vh;
     width: 99.9%;
 
     .heroMessage {
-      // border: 1px dashed red;
       flex-direction: column;
       height: 40vh;
       margin-top: 50vh;
       width: 99.5%;
 
       .heroMessageContainer {
-        // border: 1px dashed yellow;
         height: 23vh;
         width: 95%;
         margin: 3%;
@@ -69,7 +68,8 @@
       flex-direction: column;
       height: 100vh;
       width: 99vw;
-      overflow-x: hidden;
+      overflow: auto;
+      // overflow-y: hidden;
 
       .projectContainer {
         height: 25vh;
@@ -97,7 +97,6 @@
     height: 100vh;
 
     .aboutContainer {
-      // border: 1px dashed white;
       height: auto;
       margin-top: 6vh;
 
@@ -110,7 +109,6 @@
       }
 
       .skillContainer {
-        // border: 1px dashed red;
         margin-top: 15%;
         height: auto;
 
@@ -133,7 +131,6 @@
 
     .resumeContainer {
       .resumeIntro {
-        // border: 1px dashed red;
         height: 40vh;
         width: 90vw;
         margin: 2% 2vw;
@@ -149,7 +146,6 @@
       flex-direction: column;
 
       div {
-        // border: 1px dashed yellow;
         width: 80vw;
 
         margin: 2% auto;
@@ -157,56 +153,7 @@
     }
   }
 
-  // .contactSection{
-  //     height: 100vh;
-  //     width: 100vw;
 
-  //     .contactContainer{
-  //         display: flex;
-  //         flex-direction: column;
-
-  //         .contactForm{
-  //             margin: 0 auto;
-  //             width: 90%;
-  //             flex-direction: column;
-  //             justify-content: center;
-
-  //             fieldset{
-  //                 width: 49%;
-  //                 margin: 2%;
-
-  //                 input{
-  //                     width: 100%;
-  //                 }
-  //             }
-
-  //             .messageTypeContainer{
-  //                 width: 80vw;
-
-  //                 select{
-  //                     width: 60vw;
-  //                 }
-  //             }
-
-  //             textarea{
-  //                 width: 86vw;
-  //                 margin: 1% .1%;
-  //             }
-  //             .submitBtn{
-  //                 width: 40%;
-  //                 margin-left:55vw;
-  //             }
-
-  //         }
-
-  //         .socialMediaContainer{
-  //             margin: 5% auto;
-  //             width: 50vw;
-
-  //         }
-  //     }
-
-  // }
 
   //# About Table
   .aboutContainer {
@@ -214,7 +161,6 @@
     flex-direction: column;
 
     .aboutIntro {
-      border: 1px dashed white;
       height: 25vh;
     }
 

@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	symlinks = false
+[lfs "portfolio.git/info/lfs"]
+	locksverify = false

@@ -45,6 +45,7 @@
     h2 {
       color: variables.$fourth-color;
       font-weight: 700;
+      font-size: 2rem;
       height: 50%;
       margin: 0;
     }
@@ -67,7 +68,6 @@
     }
 
     .gLink {
-        border: 1px dashed white;
         width: 100%;
       text-align: center;
       &:hover {
