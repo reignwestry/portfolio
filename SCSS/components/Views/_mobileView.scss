@@ -3,205 +3,229 @@
 @use "../mixins";
 
 @media only screen and (min-width: 0px) and (max-width: variables.$mobile-breakpoint) {
-  //# Hero Section
+  //   //# Header
   header {
-    width: 99vw;
+    .mainNav {
+      width: 10vw;
+      position: absolute;
+      right: 5vw;
 
-    .headerTitle {
-      font-size: 195%;
-      width: 100%;
-      margin: 0 1%;
-    }
+      .hamburger {
+        display: inline-block;
+        width: 8vw;
 
-    // button, svg{
-    //     display: inline-block;
-    // }
-    
-    .hamburger{
-      display:inline-block;
-      background: white;
-    }
-
-    //# NavLinks li
-    .navMenu, ul, li {
-      display: none;
-    }
-  }
-  
-
-  .heroSection {
-    height: 100vh;
-    width: 99.9%;
-
-    .heroMessage {
-      flex-direction: column;
-      height: 40vh;
-      margin-top: 50vh;
-      width: 99.5%;
-
-      .heroMessageContainer {
-        height: 23vh;
-        width: 95%;
-        margin: 3%;
-
-        p {
-          font-size: 3rem;
+        &:focus,
+        &:hover {
+          background: variables.$primary-color;
+        }
+        img {
+          width: 100%;
         }
       }
-      button {
-        margin-top: 2%;
-        width: 50%;
-      }
-    }
-  }
 
-  //# Showcase Section
-  .showcaseSection {
-    height: 100vh;
-    width: 100vw;
+      .navMenu {
+        border: 1px dotted red;
+        display: none;
+        // display: inline-block;
+        height: 32vh;
+        top: 8vh;
+        right: 0;
+        width: 29vw;
+        position: absolute;
+        z-index: 0;
 
-    .headerContainer {
-      margin-bottom: 5vh;
-    }
-
-    .showcase {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      width: 99vw;
-      overflow: auto;
-      // overflow-y: hidden;
-
-      .projectContainer {
-        height: 25vh;
-        width: 100vw;
-      }
-    }
-
-    .projectThumbLink {
-      width: 99.7%;
-
-      .projectDetails {
-        .projectHeader {
-          font-size: 100%;
-
-          span {
-            color: variables.$primary-color;
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: auto;
+          margin: 1%;
+          li {
+            height: 5vh;
+            width: 73vw;
+            margin: 1%;
+            text-align: center;
           }
         }
       }
     }
   }
+}
 
-  //# About Section
-  .aboutSection {
-    height: 100vh;
+//# HERO SECTION
+.heroSection {
+  height: 100vh;
+  width: 99.9%;
 
-    .aboutContainer {
-      height: auto;
-      margin-top: 6vh;
+  .heroMessage {
+    flex-direction: column;
+    height: 40vh;
+    margin-top: 40vh;
+    width: 99.5%;
 
-      .aboutIntro {
-        width: 80vw;
+    .heroMessageContainer {
+      height: 23vh;
+      width: 95%;
+      margin: 3%;
 
-        p {
-          font-size: 1.5rem;
-        }
+      p {
+        font-size: 3rem;
       }
+    }
+    button {
+      margin-top: 2%;
+      width: 50%;
+    }
+  }
+}
 
-      .skillContainer {
-        margin-top: 15%;
-        height: auto;
+//# Showcase Section
+.showcaseSection {
+  height: 100vh;
+  width: 100vw;
 
-        .skillbox {
-          h3 {
-            font-size: 1.6rem;
-          }
-          ul > li {
-            height: 7.4vh;
-          }
-          width: 30%;
+  .headerContainer {
+    margin-bottom: 5vh;
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: flex-start;
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh auto;
+    overflow-x: auto;
+    align-items: space-around;
+    // overflow-y: hidden;
+
+    .projectContainer {
+      height: 30vh;
+      width: 89vw;
+      margin: 2% 0;
+    }
+  }
+
+  .projectThumbLink {
+    width: 99.7%;
+
+    .projectDetails {
+      .projectHeader {
+        font-size: 100%;
+
+        span {
+          color: variables.$primary-color;
         }
       }
     }
   }
+}
 
-  //# Resume Section
-  .resumeSection {
-    height: auto;
+//# About Section
+.aboutSection {
+  height: 100vh;
 
-    .resumeContainer {
-      .resumeIntro {
-        height: 40vh;
-        width: 90vw;
-        margin: 2% 2vw;
-
-        p {
-          font-size: 1.9rem;
-        }
-      }
-    }
-
-    .educationBox {
-      display: flex;
-      flex-direction: column;
-
-      div {
-        width: 80vw;
-
-        margin: 2% auto;
-      }
-    }
-  }
-
-
-
-  //# About Table
   .aboutContainer {
+    height: auto;
+    margin-top: 6vh;
+
+    .aboutIntro {
+      width: 80vw;
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .skillContainer {
+      margin-top: 15%;
+      height: auto;
+
+      .skillbox {
+        h3 {
+          font-size: 1.6rem;
+        }
+        ul > li {
+          height: 7.4vh;
+        }
+        width: 30%;
+      }
+    }
+  }
+}
+
+//# Resume Section
+.resumeSection {
+  height: auto;
+
+  .resumeContainer {
+    .resumeIntro {
+      height: 40vh;
+      width: 90vw;
+      margin: 2% 2vw;
+
+      p {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  .educationBox {
     display: flex;
     flex-direction: column;
 
-    .aboutIntro {
-      height: 25vh;
-    }
-
-    table {
+    div {
       width: 80vw;
 
-      th {
-        font-size: 95%;
-        text-align: center;
-      }
-      td {
-        font-size: 90%;
-      }
+      margin: 2% auto;
     }
   }
+}
 
-  //# Contact Form
-  .contactInfoBox {
-    height: 80vh;
-    margin: 0 auto;
-    width: 95vw;
+//# About Table
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
 
-    .contactFormBox {
-      height: 80%;
-      width: 100%;
+  .aboutIntro {
+    height: 25vh;
+  }
 
-      form {
-        height: 100%;
-        margin: 0 auto;
-        width: 90%;
+  table {
+    width: 80vw;
 
-        input,
-        input:active {
-          border: none;
-        }
+    th {
+      font-size: 95%;
+      text-align: center;
+    }
+    td {
+      font-size: 90%;
+    }
+  }
+}
 
-        button {
-          width: 80%;
-          font-size: 95%;
-        }
+//# Contact Form
+.contactInfoBox {
+  height: 80vh;
+  margin: 0 auto;
+  width: 95vw;
+
+  .contactFormBox {
+    height: 80%;
+    width: 100%;
+
+    form {
+      height: 100%;
+      margin: 0 auto;
+      width: 90%;
+
+      input,
+      input:active {
+        border: none;
+      }
+
+      button {
+        width: 80%;
+        font-size: 95%;
       }
     }
   }
