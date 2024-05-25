@@ -11,7 +11,17 @@
   height: 5vh;
 
   .hamburger {
-    display: none;
+    // display: none;
+    width: 3vw;
+    height: 5vh;
+
+    img{
+      width: 3vw;
+      height: 5vh;
+      background-color: variables.$primary-color;
+      color: blue;
+      margin: 0;padding: 0;
+    }
   }
 
   ul {

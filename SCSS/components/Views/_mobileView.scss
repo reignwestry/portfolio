@@ -19,10 +19,11 @@
     
     .hamburger{
       display:inline-block;
+      background: white;
     }
 
     //# NavLinks li
-    ul {
+    .navMenu, ul, li {
       display: none;
     }
   }
