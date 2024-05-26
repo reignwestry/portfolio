@@ -888,7 +888,7 @@ footer {
   color: rgb(0, 241, 74);
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header .mainNav {
     width: 10vw;
     position: absolute;
@@ -905,8 +905,7 @@ footer {
     width: 100%;
   }
   header .mainNav .navMenu {
-    border: 1px dotted red;
-    display: none;
+    display: block;
     height: 32vh;
     top: 8vh;
     right: 0;
@@ -926,6 +925,9 @@ footer {
     width: 73vw;
     margin: 1%;
     text-align: center;
+  }
+  header .hamburger:hover, header .hamburger:focus > .navMenu {
+    display: block;
   }
 }
 .heroSection {

@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <meta author="Reign Westry" />
   <title>Reign Westry</title>
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -10,11 +11,11 @@
       <header>
         <h1 class="headerTitle">Reign Westry</h1>
         <nav class="mainNav">
-          <button class="hamburger">
+          <button onclick="dropDown()" class="hamburger">
             <img src="./imgs/menu_icon/burger.svg" />
           </button>
           
-          <div class="navMenu">
+          <div class="navMenu" id="mainNav">
             <ul>
               <li><a class="navLink" href="#">Home</a></li>
               <li>
@@ -396,6 +397,7 @@
     <div>Copyright&copy;2024 ReignWestry.com</div>
   </footer>
   <script type="text/javascript" src="scripts/thankYou.js"></script>
+  <script type="text/javascript" src="scripts/menu.js"></script>
   <script type="text/php" src="scripts/sendMail.php"></script>
 </body>
 <!-- TODO
