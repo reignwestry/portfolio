@@ -926,147 +926,142 @@ footer {
     margin: 1%;
     text-align: center;
   }
-}
-.heroSection {
-  height: 100vh;
-  width: 99.9%;
-}
-.heroSection .heroMessage {
-  flex-direction: column;
-  height: 40vh;
-  margin-top: 40vh;
-  width: 99.5%;
-}
-.heroSection .heroMessage .heroMessageContainer {
-  height: 23vh;
-  width: 95%;
-  margin: 3%;
-}
-.heroSection .heroMessage .heroMessageContainer p {
-  font-size: 3rem;
-}
-.heroSection .heroMessage button {
-  margin-top: 2%;
-  width: 50%;
-}
-
-.showcaseSection {
-  height: 100vh;
-  width: 100vw;
-}
-.showcaseSection .headerContainer {
-  margin-bottom: 5vh;
-}
-.showcaseSection .showcase {
-  display: flex;
-  flex-direction: flex-start;
-  height: 90vh;
-  width: 90vw;
-  margin: 5vh auto;
-  overflow-x: auto;
-  align-items: space-around;
-}
-.showcaseSection .showcase .projectContainer {
-  height: 30vh;
-  width: 89vw;
-  margin: 2% 0;
-}
-.showcaseSection .projectThumbLink {
-  width: 99.7%;
-}
-.showcaseSection .projectThumbLink .projectDetails .projectHeader {
-  font-size: 100%;
-}
-.showcaseSection .projectThumbLink .projectDetails .projectHeader span {
-  color: rgb(0, 241, 74);
-}
-
-.aboutSection {
-  height: 100vh;
-}
-.aboutSection .aboutContainer {
-  height: auto;
-  margin-top: 6vh;
-}
-.aboutSection .aboutContainer .aboutIntro {
-  width: 80vw;
-}
-.aboutSection .aboutContainer .aboutIntro p {
-  font-size: 1.5rem;
-}
-.aboutSection .aboutContainer .skillContainer {
-  margin-top: 15%;
-  height: auto;
-}
-.aboutSection .aboutContainer .skillContainer .skillbox {
-  width: 30%;
-}
-.aboutSection .aboutContainer .skillContainer .skillbox h3 {
-  font-size: 1.6rem;
-}
-.aboutSection .aboutContainer .skillContainer .skillbox ul > li {
-  height: 7.4vh;
-}
-
-.resumeSection {
-  height: auto;
-}
-.resumeSection .resumeContainer .resumeIntro {
-  height: 40vh;
-  width: 90vw;
-  margin: 2% 2vw;
-}
-.resumeSection .resumeContainer .resumeIntro p {
-  font-size: 1.9rem;
-}
-.resumeSection .educationBox {
-  display: flex;
-  flex-direction: column;
-}
-.resumeSection .educationBox div {
-  width: 80vw;
-  margin: 2% auto;
-}
-
-.aboutContainer {
-  display: flex;
-  flex-direction: column;
-}
-.aboutContainer .aboutIntro {
-  height: 25vh;
-}
-.aboutContainer table {
-  width: 80vw;
-}
-.aboutContainer table th {
-  font-size: 95%;
-  text-align: center;
-}
-.aboutContainer table td {
-  font-size: 90%;
-}
-
-.contactInfoBox {
-  height: 80vh;
-  margin: 0 auto;
-  width: 95vw;
-}
-.contactInfoBox .contactFormBox {
-  height: 80%;
-  width: 100%;
-}
-.contactInfoBox .contactFormBox form {
-  height: 100%;
-  margin: 0 auto;
-  width: 90%;
-}
-.contactInfoBox .contactFormBox form input,
-.contactInfoBox .contactFormBox form input:active {
-  border: none;
-}
-.contactInfoBox .contactFormBox form button {
-  width: 80%;
-  font-size: 95%;
+  .heroSection {
+    height: 100vh;
+    width: 99.9%;
+  }
+  .heroSection .heroMessage {
+    flex-direction: column;
+    height: 40vh;
+    margin-top: 40vh;
+    width: 99.5%;
+  }
+  .heroSection .heroMessage .heroMessageContainer {
+    height: 23vh;
+    width: 95%;
+    margin: 3%;
+  }
+  .heroSection .heroMessage .heroMessageContainer p {
+    font-size: 3rem;
+  }
+  .heroSection .heroMessage button {
+    margin-top: 2%;
+    width: 50%;
+  }
+  .showcaseSection {
+    height: 100vh;
+    width: 100vw;
+  }
+  .showcaseSection .headerContainer {
+    margin-bottom: 5vh;
+  }
+  .showcaseSection .showcase {
+    display: flex;
+    flex-direction: flex-start;
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh auto;
+    overflow-x: auto;
+    align-items: space-around;
+  }
+  .showcaseSection .showcase .projectContainer {
+    height: 30vh;
+    width: 89vw;
+    margin: 2% 0;
+  }
+  .showcaseSection .projectThumbLink {
+    width: 99.7%;
+  }
+  .showcaseSection .projectThumbLink .projectDetails .projectHeader {
+    font-size: 100%;
+  }
+  .showcaseSection .projectThumbLink .projectDetails .projectHeader span {
+    color: rgb(0, 241, 74);
+  }
+  .aboutSection {
+    height: 100vh;
+  }
+  .aboutSection .aboutContainer {
+    height: auto;
+    margin-top: 6vh;
+  }
+  .aboutSection .aboutContainer .aboutIntro {
+    width: 80vw;
+  }
+  .aboutSection .aboutContainer .aboutIntro p {
+    font-size: 1.5rem;
+  }
+  .aboutSection .aboutContainer .skillContainer {
+    margin-top: 15%;
+    height: auto;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox {
+    width: 30%;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox h3 {
+    font-size: 1.6rem;
+  }
+  .aboutSection .aboutContainer .skillContainer .skillbox ul > li {
+    height: 7.4vh;
+  }
+  .resumeSection {
+    height: auto;
+  }
+  .resumeSection .resumeContainer .resumeIntro {
+    height: 40vh;
+    width: 90vw;
+    margin: 2% 2vw;
+  }
+  .resumeSection .resumeContainer .resumeIntro p {
+    font-size: 1.9rem;
+  }
+  .resumeSection .educationBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .resumeSection .educationBox div {
+    width: 80vw;
+    margin: 2% auto;
+  }
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutContainer .aboutIntro {
+    height: 25vh;
+  }
+  .aboutContainer table {
+    width: 80vw;
+  }
+  .aboutContainer table th {
+    font-size: 95%;
+    text-align: center;
+  }
+  .aboutContainer table td {
+    font-size: 90%;
+  }
+  .contactInfoBox {
+    height: 80vh;
+    margin: 0 auto;
+    width: 95vw;
+  }
+  .contactInfoBox .contactFormBox {
+    height: 80%;
+    width: 100%;
+  }
+  .contactInfoBox .contactFormBox form {
+    height: 100%;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .contactInfoBox .contactFormBox form input,
+  .contactInfoBox .contactFormBox form input:active {
+    border: none;
+  }
+  .contactInfoBox .contactFormBox form button {
+    width: 80%;
+    font-size: 95%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

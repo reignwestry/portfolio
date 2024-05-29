@@ -3,12 +3,9 @@
 @use "../mixins";
 
 // MOBILE VIEW
-@media only screen  and (max-width: variables.$mobile-breakpoint) {
-  
-  
+@media only screen and (max-width: variables.$mobile-breakpoint) {
   //# Header
   header {
-  
     .mainNav {
       width: 10vw;
       position: absolute;
@@ -20,13 +17,12 @@
 
         &:focus,
         &:hover {
-          background: variables.$primary-color; 
+          background: variables.$primary-color;
         }
-        
+
         img {
           width: 100%;
         }
-
       }
 
       .navMenu {
@@ -55,183 +51,185 @@
       }
     }
   }
-}
 
-//# HERO SECTION
-.heroSection {
-  height: 100vh;
-  width: 99.9%;
+  //# HERO SECTION
+  .heroSection {
+    height: 100vh;
+    width: 99.9%;
 
-  .heroMessage {
-    flex-direction: column;
-    height: 40vh;
-    margin-top: 40vh;
-    width: 99.5%;
+    .heroMessage {
+      flex-direction: column;
+      height: 40vh;
+      margin-top: 40vh;
+      width: 99.5%;
 
-    .heroMessageContainer {
-      height: 23vh;
-      width: 95%;
-      margin: 3%;
+      .heroMessageContainer {
+        height: 23vh;
+        width: 95%;
+        margin: 3%;
 
-      p {
-        font-size: 3rem;
+        p {
+          font-size: 3rem;
+        }
+      }
+      button {
+        margin-top: 2%;
+        width: 50%;
       }
     }
-    button {
-      margin-top: 2%;
-      width: 50%;
+  }
+
+  //# Showcase Section
+  .showcaseSection {
+    height: 100vh;
+    width: 100vw;
+
+    .headerContainer {
+      margin-bottom: 5vh;
     }
-  }
-}
 
-//# Showcase Section
-.showcaseSection {
-  height: 100vh;
-  width: 100vw;
+    .showcase {
+      display: flex;
+      flex-direction: flex-start;
+      height: 90vh;
+      width: 90vw;
+      margin: 5vh auto;
+      overflow-x: auto;
+      align-items: space-around;
+      // overflow-y: hidden;
 
-  .headerContainer {
-    margin-bottom: 5vh;
-  }
-
-  .showcase {
-    display: flex;
-    flex-direction: flex-start;
-    height: 90vh;
-    width: 90vw;
-    margin: 5vh auto;
-    overflow-x: auto;
-    align-items: space-around;
-    // overflow-y: hidden;
-
-    .projectContainer {
-      height: 30vh;
-      width: 89vw;
-      margin: 2% 0;
+      .projectContainer {
+        height: 30vh;
+        width: 89vw;
+        margin: 2% 0;
+      }
     }
-  }
 
-  .projectThumbLink {
-    width: 99.7%;
+    .projectThumbLink {
+      width: 99.7%;
 
-    .projectDetails {
-      .projectHeader {
-        font-size: 100%;
+      .projectDetails {
+        .projectHeader {
+          font-size: 100%;
 
-        span {
-          color: variables.$primary-color;
+          span {
+            color: variables.$primary-color;
+          }
         }
       }
     }
   }
-}
 
-//# About Section
-.aboutSection {
-  height: 100vh;
+  //# About Section
+  .aboutSection {
+    height: 100vh;
 
-  .aboutContainer {
+    .aboutContainer {
+      height: auto;
+      margin-top: 6vh;
+
+      .aboutIntro {
+        width: 80vw;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .skillContainer {
+        margin-top: 15%;
+        height: auto;
+
+        .skillbox {
+          h3 {
+            font-size: 1.6rem;
+          }
+          ul > li {
+            height: 7.4vh;
+          }
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  //# Resume Section
+  .resumeSection {
     height: auto;
-    margin-top: 6vh;
+
+    .resumeContainer {
+      .resumeIntro {
+        height: 40vh;
+        width: 90vw;
+        margin: 2% 2vw;
+
+        p {
+          font-size: 1.9rem;
+        }
+      }
+    }
+
+    .educationBox {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 80vw;
+
+        margin: 2% auto;
+      }
+    }
+  }
+
+  //# About Table
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
 
     .aboutIntro {
+      height: 25vh;
+    }
+
+    table {
       width: 80vw;
 
-      p {
-        font-size: 1.5rem;
-      }
-    }
-
-    .skillContainer {
-      margin-top: 15%;
-      height: auto;
-
-      .skillbox {
-        h3 {
-          font-size: 1.6rem;
-        }
-        ul > li {
-          height: 7.4vh;
-        }
-        width: 30%;
-      }
-    }
-  }
-}
-
-//# Resume Section
-.resumeSection {
-  height: auto;
-
-  .resumeContainer {
-    .resumeIntro {
-      height: 40vh;
-      width: 90vw;
-      margin: 2% 2vw;
-
-      p {
-        font-size: 1.9rem;
-      }
-    }
-  }
-
-  .educationBox {
-    display: flex;
-    flex-direction: column;
-
-    div {
-      width: 80vw;
-
-      margin: 2% auto;
-    }
-  }
-}
-
-//# About Table
-.aboutContainer {
-  display: flex;
-  flex-direction: column;
-
-  .aboutIntro {
-    height: 25vh;
-  }
-
-  table {
-    width: 80vw;
-
-    th {
-      font-size: 95%;
-      text-align: center;
-    }
-    td {
-      font-size: 90%;
-    }
-  }
-}
-
-//# Contact Form
-.contactInfoBox {
-  height: 80vh;
-  margin: 0 auto;
-  width: 95vw;
-
-  .contactFormBox {
-    height: 80%;
-    width: 100%;
-
-    form {
-      height: 100%;
-      margin: 0 auto;
-      width: 90%;
-
-      input,
-      input:active {
-        border: none;
-      }
-
-      button {
-        width: 80%;
+      th {
         font-size: 95%;
+        text-align: center;
+      }
+      td {
+        font-size: 90%;
       }
     }
   }
+
+  //# Contact Form
+  .contactInfoBox {
+    height: 80vh;
+    margin: 0 auto;
+    width: 95vw;
+
+    .contactFormBox {
+      height: 80%;
+      width: 100%;
+
+      form {
+        height: 100%;
+        margin: 0 auto;
+        width: 90%;
+
+        input,
+        input:active {
+          border: none;
+        }
+
+        button {
+          width: 80%;
+          font-size: 95%;
+        }
+      }
+    }
+  }
+
+  
 }
