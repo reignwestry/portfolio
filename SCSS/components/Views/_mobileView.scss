@@ -2,9 +2,13 @@
 @use "../variables";
 @use "../mixins";
 
+// MOBILE VIEW
 @media only screen  and (max-width: variables.$mobile-breakpoint) {
-  //   //# Header
+  
+  
+  //# Header
   header {
+  
     .mainNav {
       width: 10vw;
       position: absolute;
@@ -16,9 +20,7 @@
 
         &:focus,
         &:hover {
-          background: variables.$primary-color;
-
-          
+          background: variables.$primary-color; 
         }
         
         img {
@@ -52,9 +54,6 @@
         }
       }
     }
-    .hamburger:hover, .hamburger:focus > .navMenu{
-          display: block
-        }
   }
 }
 

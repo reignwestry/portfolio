@@ -926,9 +926,6 @@ footer {
     margin: 1%;
     text-align: center;
   }
-  header .hamburger:hover, header .hamburger:focus > .navMenu {
-    display: block;
-  }
 }
 .heroSection {
   height: 100vh;
