@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <meta author="Reign Westry" />
   <title>Reign Westry</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -11,23 +11,28 @@
       <header>
         <h1 class="headerTitle">Reign Westry</h1>
         <nav class="mainNav">
-          <button onclick="dropDown()" class="hamburger">
-            <img src="./imgs/menu_icon/burger.svg" />
-          </button>
           
-          <div class="navMenu" id="mainNav">
             <ul>
-              <li><a class="navLink" href="#">Home</a></li>
-              <li>
-                <a class="navLink" href="./pages/gallery.html">Gallery</a>
-              </li>
-              <li><a class="navLink" href="./pages/about.html">About</a></li>
-              <li><a class="navLink" href="./pages/resume.html">Resume</a></li>
-              <li>
-                <a class="navLink" href="./pages/contact.html">Contact</a>
+              <li  class="hamburger"><img src="./imgs/menu_icon/burger.svg" />
+
+                <ul class="subList">
+                  <li><a class="navLink" href="#">Home</a></li>
+                  <li>
+                    <a class="navLink" href="./pages/gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="navLink" href="./pages/about.html">About</a>
+                  </li>
+                  <li>
+                    <a class="navLink" href="./pages/resume.html">Resume</a>
+                  </li>
+                  <li>
+                    <a class="navLink" href="./pages/contact.html">Contact</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </div>
+
         </nav>
       </header>
     </div>
@@ -50,7 +55,7 @@
     <span>Here is a showcase of my best and latest projects</span>
     <div class="showcase">
       <!-- PROJECT ONE - ACME -->
-      <div class="projectContainer ">
+      <div class="projectContainer">
         <div class="project pOne">
           <a href="./projects/01-ACME-Photography/index.html">
             <div class="projectBox">

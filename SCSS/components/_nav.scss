@@ -19,7 +19,7 @@
       width: 3vw;
       height: 5vh;
       background-color: variables.$primary-color;
-      color: blue;
+      // color: blue;
       margin: 0;padding: 0;
     }
   }
@@ -69,6 +69,7 @@
 .navLink {
   text-decoration: none;
   color: variables.$fourth-color;
+
   background: transparent;
 
   &:active {
