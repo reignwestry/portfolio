@@ -210,24 +210,26 @@ header h1 {
 .heroMessage .heroMessageContainer p .heroSpanTwo {
   color: rgb(0, 241, 74);
 }
-.heroMessage button {
-  background: rgb(10, 245, 254);
+.heroMessage .contactMe {
+  background: #4a3103;
   border-radius: 15px;
   box-shadow: -5px 5px darkgreen;
-  color: white;
+  color: rgb(0, 241, 74);
+  text-shadow: -1px 2px rgba(247, 179, 4, 0.7);
   font-size: 2.5rem;
-  height: 10vh;
+  font-weight: bold;
+  height: 5vh;
   margin: 0;
-  margin-top: 25vh;
+  margin-top: vh;
   margin-left: 25vw;
-  width: 20vw;
+  width: 60vw;
+  text-align: center;
 }
-.heroMessage button:focus {
-  background: rgb(0, 241, 74);
-  color: green;
-}
-.heroMessage button:hover {
-  background: rgb(10, 245, 254);
+.heroMessage .contactMe:hover {
+  box-shadow: -1px 2px rgb(0, 241, 74);
+  width: 58vw;
+  color: #4a3103 darken;
+  font-weight: 800;
 }
 
 .showcaseSection {
@@ -909,19 +911,21 @@ footer {
   }
   header .mainNav ul .hamburger:hover li:has(> a), header .mainNav ul .hamburger:focus li:has(> a) {
     display: flex;
+    transition: visibility 0s, opacity 0.5s linear;
   }
   header .mainNav ul .hamburger img {
     width: 100%;
     height: 100%;
   }
   header .mainNav ul .hamburger .subList {
+    margin: 0;
     display: inline-block;
     height: auto;
-    top: 8vh;
+    top: 5vh;
     right: 0;
-    width: 40vw;
+    left: -82vw;
+    width: 90vw;
     position: absolute;
-    border: 1px dashed red;
   }
   header .mainNav ul .hamburger .subList li {
     display: none;
@@ -972,6 +976,9 @@ footer {
   }
   .showcaseSection .headerContainer {
     margin-bottom: 5vh;
+  }
+  .showcaseSection span {
+    font-size: 1.8rem;
   }
   .showcaseSection .showcase {
     display: flex;
@@ -1057,6 +1064,16 @@ footer {
   }
   .aboutContainer table td {
     font-size: 90%;
+  }
+  .titleBox {
+    width: 50vw;
+    height: 10vh;
+    margin-left: 2vw;
+  }
+  .titleBox .contactHeader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .contactInfoBox {
     height: 80vh;

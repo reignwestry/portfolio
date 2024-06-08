@@ -1,0 +1,20 @@
+#!/bin/sh
+
+
+
+# the RELATIVE PATH of the project folder from the .git directory
+TARGET="../public_html/"
+
+# the ABSOLUTE PATH of the .git directory
+GIT_DIR="/home1/reigndes/portfolio.git"
+
+
+
+
+        echo "Ref $ref received. Deploying ${BRANCH} branch on server..."
+                git --work-tree="${TARGET}" --git-dir="${GIT_DIR}" checkout -f master
+
+                echo "################################################"
+                echo "## PROJECT UPLOADED AND DEPLOYED TO SERVER ##"
+                echo "################################################"
+
