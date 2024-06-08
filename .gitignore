@@ -2,7 +2,7 @@ node_modules/
 projects/
 paymentGateway/
 .pHooks/
-sub_domains/
+
 db/
 dist/
 email/variables.php
